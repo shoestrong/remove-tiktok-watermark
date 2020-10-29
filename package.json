@@ -1,0 +1,34 @@
+{
+  "name": "remove-tiktok-watermark",
+  "version": "1.0.0",
+  "description": "去除抖音水印",
+  "main": "index.js",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.21.0",
+    "debug": "^4.2.0",
+    "koa": "^2.13.0",
+    "koa-bodyparser": "^4.3.0",
+    "koa-json": "^2.0.2",
+    "koa-logger": "^3.2.1",
+    "koa-mount": "^4.0.0",
+    "koa-onerror": "^4.1.0",
+    "koa-router": "^9.4.0",
+    "koa-static": "^5.0.0"
+  },
+  "devDependencies": {
+    "inquirer": "^7.3.3",
+    "node-fetch": "^2.6.1",
+    "nodemon": "^2.0.6",
+    "request": "^2.88.2"
+  },
+  "scripts": {
+    "bin:node": "node bin/parse.js",
+    "bin:py": "python3 bin/parse.py",
+    "dev": "PORT= && DEBUG=dev ./node_modules/.bin/nodemon index.js",
+    "prod": "PORT=9091 && DEBUG=dev pm2 start index.js"
+  },
+  "keywords": [],
+  "author": "shoestrong",
+  "license": "ISC"
+}
