@@ -2,7 +2,7 @@ const fs = require('fs')
 const path = require('path')
 const axios = require('axios')
 const router = require('koa-router')()
-const { ipAddress } = require('../utils/config')
+const { ipAddress, downloadUrl } = require('../utils/config')
 
 const UA = ' Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1'
 
@@ -78,7 +78,7 @@ const buildVideoFilesToUrl = (url) => {
 					path.join(__dirname, '../download'),
 					fileName
 				).then(() => {
-					resolve(`${ipAddress}/download/${fileName}`)
+					resolve(`${downloadUrl}/download/${fileName}`)
 				}).catch(() => {
 					reject('下载出错')
 				})
