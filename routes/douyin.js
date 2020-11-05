@@ -92,10 +92,10 @@ const buildVideoFilesToUrl = (url) => {
 }
 
 // 添加前缀请求url
-router.prefix('/oapi')
+router.prefix('/douyin')
 
 // 请求地址为/douyin/getCurrentUrl
-router.get('/douyin/getCurrentUrl', async (ctx, next) => {
+router.get('/getCurrentUrl', async (ctx, next) => {
 	let { url } = ctx.query
 	await buildVideoFilesToUrl(url).then(cuurentUrl => {
 		ctx.body = {
