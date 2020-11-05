@@ -26,7 +26,7 @@
     "bin:node": "node bin/parse.js",
     "bin:py": "python3 bin/parse.py",
     "dev": "PORT= && DEBUG=dev ./node_modules/.bin/nodemon index.js",
-    "prod": "PORT=9091 && DEBUG=dev pm2 start index.js"
+    "prod": "PORT=9091 && DEBUG=prod pm2 start index.js"
   },
   "keywords": [],
   "author": "shoestrong",
