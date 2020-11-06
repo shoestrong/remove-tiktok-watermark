@@ -30,7 +30,7 @@ function getIPAddress() {
     //     }
     // } else {
     // }
-    return 'http://yitama.com'
+    return 'https://yitama.com'
 }
 
 module.exports = {
