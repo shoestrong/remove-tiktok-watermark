@@ -18,8 +18,8 @@ app.use(
     enableTypes: ['json', 'form', 'text']
   })
 )
-// app.use(json())
-// app.use(logger())
+app.use(json())
+app.use(logger())
 
 // app.use(mount("/download", serve("./download")))
 
