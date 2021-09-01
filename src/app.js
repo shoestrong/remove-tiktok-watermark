@@ -19,9 +19,9 @@ app.use(
   })
 )
 // app.use(json())
-app.use(logger())
+// app.use(logger())
 
-app.use(mount("/download", serve("./download")))
+// app.use(mount("/download", serve("./download")))
 
 // logger
 app.use(async (ctx, next) => {
